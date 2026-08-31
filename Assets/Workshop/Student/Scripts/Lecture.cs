@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 namespace Assignment
 {
@@ -15,8 +18,8 @@ namespace Assignment
             //LCT03_SyntaxLoop();
             //LCT04_LoopAndArray();
             //LCT05_Syntax2DArray();
-            LCT06_SizeOf2DArray();
-            // LCT07_SyntaxNestedLoop();
+            //LCT06_SizeOf2DArray();
+            LCT07_SyntaxNestedLoop();
         }
 
         #region Lecture
@@ -296,7 +299,17 @@ namespace Assignment
         public int lct07_rows;
         public void LCT07_SyntaxNestedLoop()
         {
-            throw new System.NotImplementedException();
+            for (int i = 0; i < lct07_rows; i++)
+            {
+                string result = "";
+
+                for (int j = 0; j < lct07_columns; j++)
+                {
+                    result += "*";
+                }
+
+                Debug.Log(result);
+            }
         }
 
         #endregion
